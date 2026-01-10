@@ -1,13 +1,13 @@
 let itemsContainerElement = document.querySelector('.items-container');
-
-items.
-itemsContainerElement.innerHTML = `
+let innerHTML = '';
+items.forEach(item => {
+    innerHTML += `
 <div class="item-container">
-    <img src="${item.item_image}">
+    <img src="${item.image}">
     <div class="rating">
-         ${item.rating.stars} ⭐ | ${item.rating.noOfReviews}
+         ${item.rating.stars} ⭐ | ${item.rating.count}
      </div>
-     <div class="company-name">${item.company_name}</div>
+     <div class="company-name">${item.company}</div>
      <div class="item-name">${item.item_name}</div>
      <div class="price">
         <span class="current-price">${item.current_price}</span>
@@ -18,4 +18,7 @@ itemsContainerElement.innerHTML = `
     <button class="btn-add-bag">Add to Bag</button>
                  
             
-</div>`;
+</div>`
+
+});
+itemsContainerElement.innerHTML = innerHTML ;
