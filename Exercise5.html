@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        #Box1 {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 50%;
+            text-align: center;
+            position: fixed;
+            left: 200px;
+
+        }
+
+        #Box2 {
+            z-index:2;
+            position: absolute;
+            left: 50px;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="Box1">Box1</div>
+        <div id="Box2" class="box">Box2</div>
+        <div id="Box3" class="box">Box3</div>
+        <div id="Box4" class="box">Box4</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+
+    </main>
+</body>
+</html>
