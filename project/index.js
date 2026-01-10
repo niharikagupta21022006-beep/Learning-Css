@@ -1,4 +1,30 @@
-let itemsContainerElement = document.querySelector('.items-container');
+let bagItems = [];
+
+
+displayItemsOnHomePage();
+
+function addToBag(itemId) {
+    bagItems.push(itemId);
+    displayBagIcon();
+}
+
+function displayBagIcon() {
+    let bagItemCountElement = document.querySelector('bag-item-count');
+    bagItemCountElement.innerHTML = bagItems.length;
+}
+
+
+
+
+
+
+
+
+
+
+
+function displayItemsOnHomePage() {
+    let itemsContainerElement = document.querySelector('.items-container');
 let innerHTML = '';
 items.forEach(item => {
     innerHTML += `
@@ -15,10 +41,15 @@ items.forEach(item => {
         <span class="discount">(${item.discount_percentage}% OFF)</span>
     </div>
 
-    <button class="btn-add-bag">Add to Bag</button>
+    <button type="button" class="btn-add-bag" onclick="addToBag(${item.id})">Add to Bag</button>
+    
                  
             
 </div>`
 
 });
 itemsContainerElement.innerHTML = innerHTML ;
+
+}
+    
+

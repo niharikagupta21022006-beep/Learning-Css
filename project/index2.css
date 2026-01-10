@@ -152,14 +152,21 @@ header {
 }
 
 .items-container {
-    width: 10%;
-    margin-left: 5%;
+    width: 80%;
+    margin: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
 
+
+
 .item-container {
     width: 250px;
-    margin: 40px 10%;
+    margin: 3%;
+    
+
 
 }
 
@@ -239,9 +246,37 @@ header {
 .btn-add-bag{
     margin-top: 8px;
     font-size: 18px;
-    width: 100%;
+    width:100%;
     background-color: lightgreen;
     border: none;
     padding: 8px 15px;
     border-radius: 10px;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+
+    
+}
+
+.bag-item-count{
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: 13px;
+    top: -44px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.action_container {
+    text-decoration: none;
+}
+a.action_container:link {
+    color:black;
 }
