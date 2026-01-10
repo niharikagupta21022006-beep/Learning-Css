@@ -1,20 +1,6 @@
 let itemsContainerElement = document.querySelector('.items-container');
 
-let item  = {
-    item_image:'https://github.com/Complete-Coding/JavaScript_Complete_YouTube/blob/main/Projects/4%20Myntra%20Functional%20Clone/images/1.jpg?raw=true" alt="item-image',
-
-    rating: {
-        stars: 4.5,
-        noOfReviews: 1400,
-    },
-
-    company_name: 'Carlton London',
-    item_name: 'Rhodium-Plated CZ Floral Studs',
-    current_price:'Rs 606',
-    original_price:'Rs 1045',
-    discount_percentage: 42,
-
-}
+items.
 itemsContainerElement.innerHTML = `
 <div class="item-container">
     <img src="${item.item_image}">
